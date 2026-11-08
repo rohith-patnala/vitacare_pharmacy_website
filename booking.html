@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="#087F72" name="theme-color" />
+    <title>Ask a Question | VitaCare Pharmacy</title>
+    <link href="assets/vitacare-mark.svg" rel="icon" type="image/svg+xml" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+    <link href="booking.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer="" src="assets/main.js"></script>
+</head>
+
+<body class="booking-page">
+    <div class="booking-controls"><button aria-label="Toggle dark mode" class="icon-btn" data-theme-toggle=""><i
+                data-lucide="moon"></i></button><button class="rtl-btn" data-rtl-toggle="">RTL</button></div>
+    <main class="booking-main">
+        <section class="booking-panel"><a class="brand booking-brand" href="index.html"><img alt="VitaCare logo"
+                    src="assets/vitacare-mark.svg" /><span class="brand-copy"><span
+                        class="brand-name">Vita<span>Care</span></span><span class="brand-tagline">YOUR HEALTH, OUR
+                        EVERYDAY CARE</span></span></a>
+            <p class="eyebrow">We’re ready to help</p>
+            <h1>Ask a question</h1>
+            <p class="booking-intro">Send a product, delivery or prescription enquiry. Please do not attach prescription
+                images or share unnecessary sensitive medical information.</p>
+            <form class="enquiry-form booking-form">
+                <div class="field"><label for="full-name"><i aria-hidden="true" data-lucide="user-round"></i> Full
+                        name</label><input autocomplete="name" id="full-name" name="name"
+                        placeholder="Enter your full name" required="" /></div>
+                <div class="field"><label for="email"><i aria-hidden="true" data-lucide="mail"></i> Email
+                        address</label><input autocomplete="email" id="email" name="email"
+                        placeholder="Enter your email address" required="" type="email" /></div>
+                <div class="field"><label for="phone"><i aria-hidden="true" data-lucide="phone"></i> Phone number
+                        (optional)</label><input autocomplete="tel" id="phone" name="phone"
+                        placeholder="Enter your phone number (optional)" /></div>
+                <div class="field"><label for="enquiry-type"><i aria-hidden="true" data-lucide="list-checks"></i>
+                        Enquiry type</label><select id="enquiry-type" name="type">
+                        <option>Product availability</option>
+                        <option>Home delivery</option>
+                        <option>Prescription enquiry</option>
+                        <option>General question</option>
+                    </select></div>
+                <div class="field full"><label for="message"><i aria-hidden="true" data-lucide="message-square"></i>
+                        Your question</label><textarea id="message" name="message"
+                        placeholder="Describe your product, delivery or general question…" required=""></textarea></div>
+                <div class="field full consent"><label><input required="" type="checkbox" /> I agree to be contacted
+                        about this enquiry.</label></div>
+                <div class="field full"><button class="btn btn-primary" type="submit">Send enquiry <i
+                            data-lucide="arrow-up-right"></i></button></div>
+                <p aria-live="polite" class="form-message" role="status"></p>
+            </form>
+            <p class="booking-note"><i data-lucide="shield-check"></i> Demo form only. It does not send or store your
+                information.</p>
+        </section>
+    </main>
+    <script>if (window.lucide) lucide.createIcons();</script>
+</body>
+
+</html>
